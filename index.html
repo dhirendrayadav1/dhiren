@@ -16,6 +16,31 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500; /* or 700/800 depending on design */
 }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* ensure Poppins for all */
+    font-weight: 400; /* normal text */
+}
+
+h1, h2, h3, h4, h5, h6, strong, .btn, .hero-title span, .section-title h2 {
+    font-weight: 700 !important; /* force bold where needed */
+}
+  .nav-link li a {
+    font-weight: 700 !important;
+}
+  .btn, .badge, .send-btn {
+    font-weight: 700 !important;
+}
+  .hero-title span:nth-child(2) {
+    font-weight: 700 !important;
+}
+  @media(max-width:768px){
+    body, h1, h2, h3, h4, .nav-link li a, .btn, .hero-title span {
+        font-weight: 700 !important;
+    }
+}
   html{
   scroll-behavior: smooth;
 }
@@ -1572,6 +1597,7 @@ if(emailBtn){
 
 </body>
 </html>
+
 
 
 
